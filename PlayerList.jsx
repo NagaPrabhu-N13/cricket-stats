@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Dummy JSON data for cricket players
 const playersData = [
   { "id": 1, "name": "Virat Kohli", "runs": 1289, "balls": 1102 },
   { "id": 2, "name": "Rohit Sharma", "runs": 978, "balls": 750 },
@@ -10,7 +9,7 @@ const playersData = [
 ];
 
 const PlayerList = () => {
-  // Function to calculate strike rate
+
   const calculateStrikeRate = (runs, balls) => {
     if (balls === 0) {
       return 0; // Avoid division by zero
@@ -48,3 +47,4 @@ const PlayerList = () => {
 };
 
 export default PlayerList;
+
