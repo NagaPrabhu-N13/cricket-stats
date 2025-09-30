@@ -1,16 +1,22 @@
-# React + Vite
+Create a New React App: Open the VS Code terminal (Ctrl + ```) and run the following command to create a new React project using Vite (a fast build tool).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+bash
+npm create vite@latest cricket-stats-app -- --template react
+Navigate to Project Directory:
 
-Currently, two official plugins are available:
+bash
+cd cricket-stats-app
+Install Dependencies:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bash
+npm install
+Create the Component File: Inside the src folder, create a new file named PlayerList.jsx.
 
-## React Compiler
+Add the Code: Copy and paste the React component code above into src/PlayerList.jsx.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Use the Component: Open src/App.jsx, remove the default content, and import your new component
 
-## Expanding the ESLint configuration
+Run the App: In the VS Code terminal, start the development server.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+bash
+npm run dev
